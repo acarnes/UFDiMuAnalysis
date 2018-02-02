@@ -1,10 +1,14 @@
 
-/////////////////////////////////////////////////////////////////////////////
-///  Simplified Higgs vs. background classification                       ///
-///                                                                       ///
-///  Adapted from ROOT TMVAClassification.C                               ///
-///  Run using "root -l HiggsClassification_v0.C                          /// 
-/////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+///  Simplified Higgs vs. background classification                         //
+//                                                                          //     
+//  Runs on our h->mumu signal and background ttrees skimmed from           //
+//   miniAOD. Further selections are made here and the events are added     //
+//   one at a time to the training/testing sets. Testing each event         //
+//   for the different selections takes a long time for these large         // 
+//   MC samples. See classifyDataFrame.cxx to cut down the time. This runs  //
+//   on flat ntuples that have already further skimmed events.              //
+//////////////////////////////////////////////////////////////////////////////
 
 #include <cstdlib>
 #include <iostream>

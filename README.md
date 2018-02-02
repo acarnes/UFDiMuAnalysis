@@ -137,7 +137,7 @@ Run using
 ./outputToDataframe
 ```
 
-There aren't any options for this one. Edit the code to change the behavior. 
+There aren't any options for this one. Edit the code to change the behavior. You can train a classifier on these flat ntuples using classifyDataFrame.cxx. With classifyDataFrame the selections are already made and the computation time is spent only on classifying. The classify script tests each event from the larger ttrees of SampleDatabase.cxx and adds them to the training and testing sets one at a time if they pass the selections.    
 
 ### outputCounts.cxx
 
